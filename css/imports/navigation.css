@@ -1,0 +1,173 @@
+body {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+.logo h1 {
+  font-family: "Goldman", Arial, Helvetica, sans-serif;
+  color: var(--orange1);
+  font-size: 3.2rem;
+  text-transform: uppercase;
+  margin: auto;
+  margin-top: -5px;
+  margin-left: 20px;
+  letter-spacing: 1px;
+}
+
+.logo p {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  color: var(--orange2);
+  font-size: 1.1rem;
+  letter-spacing: 2.2px;
+  margin: auto;
+  margin-top: -10px;
+  margin-left: 10px;
+}
+
+nav {
+  background: var(--background-colour);
+  color: var(--orange1);
+  display: flex;
+  justify-content: space-between;
+}
+
+nav .main-menu {
+  display: flex;
+  list-style: none;
+}
+
+nav .main-menu li a {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  display: inline-block;
+  padding: 13px 15px;
+  margin-top: 15px;
+  text-decoration: none;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--orange1);
+  font-size: 1.2rem;
+}
+
+nav .main-menu li a:hover {
+  background: var(--orange1);
+  color: var(--background-colour);
+  border-radius: 15px;
+  transition: 1s;
+}
+
+nav .main-menu .home-nav {
+  color: var(--background-colour);
+  padding: 13px 15px;
+  background: var(--orange1);
+  border-radius: 15px;
+}
+
+nav .open-menu {
+  font-size: 2rem;
+  margin: 20px;
+  display: none;
+  cursor: pointer;
+}
+
+nav .main-menu .close-menu, .icons i {
+  font-size: 2rem;
+  display: none;
+  cursor: pointer;
+}
+
+.fa-facebook:hover {
+  color: rgb(23, 20, 184);
+}
+
+.fa-twitter:hover {
+  color: rgb(68, 119, 185);
+}
+
+.fa-instagram:hover {
+  color: rgb(155, 52, 116);
+}
+
+nav .logo {
+  margin: 6px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 850px) {
+  nav .main-menu {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--background-colour);
+    transition: top 1.5s ease;
+    display: none;
+  }
+
+  .logo h1 {
+    font-size: 2.8rem;
+    margin-top: 4px;
+    margin-left: 15px;
+  }
+
+  .logo p {
+    font-size: 0.9rem;
+  }
+
+  nav .main-menu .close-menu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  nav .open-menu {
+    display: block;
+  }
+
+  nav .main-menu li a:hover {
+    background: none;
+    color: var(--orange1);
+    font-size: 1.2rem;
+  }
+
+  .icons i {
+    display: inline-block;
+    padding: 12px;
+  }
+
+  .gallery-title {
+    font-size: 3.2rem;
+    margin-top: 2.2rem;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .logo h1 {
+    font-size: 2.4rem;
+    margin-top: 4px;
+    margin-bottom: 5px;
+  }
+
+  .logo p {
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .logo h1 {
+    font-size: 2.2rem;
+    margin: 2px 2px 4px 15px;
+  }
+
+  .logo p {
+    font-size: 0.8rem;
+    margin-left: 1px;
+  }
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="microsite, nasa, mars, content about mars, microsite for mars, microsite for nasa">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+  <title>Mars-microsite-for-NASA-contact</title>
+</head>
+
+<body>
+  <nav>
+    <div class="logo">
+      <h1>Mars</h1>
+      <p>A microsite for NASA</p>
+    </div>
+    <div class="open-menu"><i class="fas fa-bars"></i></div>
+    <ul class="main-menu">
+      <li><a href="index.html"> Home</a></li>
+      <li><a href="facts.html">Facts</a></li>
+      <li><a href="gallery.html">Explore</a></li>
+      <li><a href="timeline.html">Timeline</a></li>
+      <li><a href="contact.html" class="home-nav active">Contact</a></li>
+      <div class="close-menu"><i class="fas fa-times"></i></div>
+      <span class="icons">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-twitter"></i>
+      </span>
+    </ul>
+  </nav>
+
+  <div class="form-avalible"></div>
+  <h2>Contact Us</h2>
+  <main class="contact-container">
+    <div class="contact-box">
+
+      <form id="contact-form" method="GET" action="#">
+        <div class="form-container">
+          <div class="form-text"><label><span>Full name:</span></div>
+          <input name="fullname" id="full-name" />
+          <div class="form-error" id="fullname-error">Please enter your first name</div>
+        </div>
+
+        <div class="form-container">
+          <div class="form-text"><label><span>Email:</span></label></div>
+          <input name="email" id="email" />
+          <div class="form-error" id="email-error">Please enter a valid email address</div>
+        </div>
+
+        <div class="form-textarea">
+          <div class="form-text"><label><span>Message:</span></label></div>
+          <input name="comment" id="message" value="Write to us here...">
+          <div class="form-error" id="message-error">Please enter a message here.</div>
+        </div>
+    </div>
+    <div class="form-button">
+      <input type="submit" value="Submit">
+    </div>
+    </form>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-sourcess">
+      <h4>Sources :</h4>
+      <li><a href="https://solarsystem.nasa.gov/planets/mars/overview/">https://solarsystem.nasa.gov/planets/mars/overview/</a></li>
+      <li><a href="https://mars.nasa.gov/">https://mars.nasa.gov/</a></li>
+      <h4>Api :</h4>
+      <li><a href="https://api.nasa.gov/">https://api.nasa.gov/</a></li>
+      <h3>Author: Karinca Danielsen &copy; 2021</h3>
+    </div>
+  </footer>
+  <script src="js/navigation.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+
+</html>

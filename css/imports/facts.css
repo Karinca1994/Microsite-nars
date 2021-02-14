@@ -1,0 +1,220 @@
+.mars-table-image {
+  background-image: url("../../images/animated-nasa-mars.gif");
+  height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.mars-table h1 {
+  display: flex;
+  justify-content: center;
+  font-family: 'Black Ops One', Arial, Helvetica, sans-serif;
+  font-size: 5rem;
+  color: var(--orange1);
+  font-weight: 200;
+  margin: 3rem 0;
+}
+
+thead tr th {
+  text-align: left;
+  font-family: 'Black Ops One', Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  color: var(--orange2);
+  font-weight: lighter;
+  text-transform: uppercase;
+  padding-bottom: 1.2rem;
+}
+
+tr td {
+  text-align: left;
+  padding: 0.5rem;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  color: var(--gray);
+  width: auto;
+}
+
+.facts-title {
+  font-family: 'Righteous', cursive;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  color: var(--orange2);
+}
+
+.facts-container {
+  text-align: center;
+  width: 90%;
+  margin: auto;
+}
+
+.iframe-from-nasa {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  width: 900px;
+  height: 540px;
+  border-radius: 30px;
+}
+
+.mars-table h4 {
+  display: flex;
+  justify-content: center;
+  font-family: 'Black Ops One', Arial, Helvetica, sans-serif;
+  font-size: 3rem;
+  color: var(--orange2);
+  font-weight: 200;
+  margin: 3rem 0;
+}
+
+.mars-table p {
+  margin: 2rem;
+}
+
+.mars-table img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  border-radius: 30px;
+}
+
+.moon-of-mars-image {
+  background-image: url("../../images/moons-mars.jpg");
+  height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (max-width: 938px) {
+  .iframe-from-nasa {
+    display: block;
+    grid-auto-flow: column;
+    width: 720px;
+    height: 410px;
+  }
+
+  .mars-table img {
+    width: 700px;
+  }
+}
+
+@media only screen and (max-width: 758px) {
+  .mars-table-image {
+    height: 300px;
+    ;
+  }
+
+  .iframe-from-nasa {
+    width: 620px;
+    height: 360px;
+  }
+
+  .mars-table h1 {
+    font-size: 3.2rem;
+  }
+
+  td .facts-title {
+    font-size: 0.9rem;
+  }
+
+  .facts-container tr td {
+    font-size: 0.8rem;
+  }
+
+  .facts-container th {
+    font-size: 1.3rem;
+  }
+
+  .mars-table img {
+    width: 450px;
+  }
+  tr td{
+    padding: 0.6rem;
+  }
+}
+
+@media only screen and (max-width: 658px) {
+  .iframe-from-nasa {
+    width: 450px;
+    height: 270px;
+  }
+}
+
+@media only screen and (max-width: 485px) {
+  .iframe-from-nasa {
+    width: 350px;
+    height: 210px;
+  }
+
+  .mars-table h1 {
+    font-size: 2.4rem;
+  }
+
+  .mars-table h4 {
+    font-size: 2rem;
+  }
+
+  .mars-table img {
+    width: 370px;
+  }
+}
+
+@media only screen and (max-width: 485px) {
+  .mars-table-image {
+    height: 200px;
+  }
+
+  .moon-of-mars-image {
+    height: 230px;
+    background-size: 100%;
+    background-attachment: unset;
+    border: 5px 0 solid var(--background-color);
+  }
+
+  .mars-table img {
+    width: 90%;
+    height: auto;
+  }
+
+  .mars-table h4 {
+    font-size: 1.6rem;
+  }
+
+  .mars-table h1 {
+    font-size: 1.8rem;
+  }
+
+  .mars-table p {
+    font-size: 17px;
+    margin-top: 15px;
+    margin-bottom: 4rem;
+    letter-spacing: 0.5px;
+  }
+
+  .iframe-from-nasa {
+    width: 300px;
+    height: 180px;
+  }
+
+  td .facts-title {
+    font-size: 0.5rem;
+  }
+
+  .facts-container th {
+    font-size: 1rem;
+    padding-left: 10px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .iframe-from-nasa {
+    width: 250px;
+    height: 150px;
+    border-radius: 0;
+  }
+}
